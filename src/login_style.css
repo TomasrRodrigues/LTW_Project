@@ -228,3 +228,129 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
+
+footer{
+    margin-top: 150px;
+}
+
+
+.footer-container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding:70px 0 0 0;
+    line-height:1.5;
+}
+
+.footer-col{
+    width:25%;
+    padding: 0 15px;
+}
+
+.footer-col h5{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h5::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #7a2009;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #dddddd;
+    padding-left: 8px;
+}
+
+.footer-col .social-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col .social-links a{
+    display: flex;  /* Changed from inline-block to flex */
+    justify-content: center;  /* Horizontally center the content */
+    align-items: center;  /* Vertically center the content */
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a img{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.footer-col .social-links a:hover{
+    color:#7a2009;
+    background-color: #ffffff;
+}
+
+.footer-bottom{
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    margin-top:50px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+@media (max-width: 800px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .footer-col{
+        width: 100%;
+    }
+}
